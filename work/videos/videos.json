@@ -1,0 +1,5 @@
+[
+  {"id":"video-1","title":"[Video title 1]","desc":"[One line: brief, tool used, outcome]","drive":"","poster":"work/videos/posters/video-1.svg","alt":"Poster frame for video 1","aspect":"16 / 9"},
+  {"id":"video-2","title":"[Video title 2]","desc":"[One line: brief, tool used, outcome]","drive":"","poster":"work/videos/posters/video-2.svg","alt":"Poster frame for video 2","aspect":"16 / 9"},
+  {"id":"video-3","title":"[Video title 3]","desc":"[One line: brief, tool used, outcome]","drive":"","poster":"work/videos/posters/video-3.svg","alt":"Poster frame for video 3","aspect":"16 / 9"}
+]

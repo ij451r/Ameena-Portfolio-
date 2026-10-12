@@ -3,157 +3,249 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Ameena PK | Media, Communications and Education</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<title>Ameena PK | Digital Marketer and Content Strategist, Dubai</title>
+<meta name="description" content="Ameena PK is a Dubai-based digital marketer and former university lecturer. AI-based content and strategy across Meta, TikTok, Google and LinkedIn Ads.">
+<link rel="canonical" href="https://ameenapk.art/">
+<meta property="og:type" content="website"><meta property="og:title" content="Ameena PK | Digital Marketer, Dubai">
+<meta property="og:description" content="AI-based content and strategy for the new era."><meta property="og:url" content="https://ameenapk.art/">
+<meta property="og:image" content="https://ameenapk.art/og.jpg"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ameena PK | Digital Marketer, Dubai"><meta name="twitter:image" content="https://ameenapk.art/og.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ameena PK","jobTitle":"Digital Marketer","url":"https://ameenapk.art/","email":"me@ameenapk.art","address":{"@type":"PostalAddress","addressLocality":"Dubai","addressCountry":"AE"},"alumniOf":["Little Flower College, Guruvayur","St. Aloysius College, Thrissur"],"knowsAbout":["Social media marketing","Meta Ads","TikTok Ads","Google Ads","LinkedIn Ads","Content creation"]}</script>
+<!-- GA4 SLOT: paste your gtag snippet here once you have a Measurement ID. Set consent default to denied and update it from your cookie banner. Not added on purpose. -->
 <style>
 :root{--bg:#F5F6FB;--ink:#1B1F3B;--soft:#51557A;--accent:#4F3FD9;--tint:#E3E1FA;--line:#CFD1E6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14162B;--ink:#EEEFFA;--soft:#A9ACD0;--accent:#9C90FF;--tint:#25285A;--line:#33376B}}
 :root[data-theme="dark"]{--bg:#14162B;--ink:#EEEFFA;--soft:#A9ACD0;--accent:#9C90FF;--tint:#25285A;--line:#33376B}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *,*:before,*:after{box-sizing:inherit}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.65 "Source Serif 4",Georgia,serif}
-h1,h2,h3,button,.sans{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.6 Aptos,"Segoe UI Variable","Segoe UI",system-ui,sans-serif}
+h1,h2,h3,button{font-family:inherit}
 a,button{color:inherit}
 a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
 .theme{position:fixed;z-index:9;right:16px;top:calc(env(safe-area-inset-top,0px) + 12px);padding:8px 14px;border-radius:999px;border:2px solid var(--ink);background:var(--bg);font-weight:700;font-size:14px;cursor:pointer}
-.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:60px 0}
-.hero>*{animation:rise .9s both}.hero p{animation-delay:.25s}.hero .cue{animation-delay:.5s}
-@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
-h1{font-size:clamp(3.4rem,14vw,9rem);line-height:.9;margin:0 0 24px;font-weight:800;letter-spacing:-.03em}
-.hero p{max-width:32em;font-size:1.25rem;margin:0 0 24px}
-.cue{font:700 16px "Bricolage Grotesque",sans-serif;color:var(--accent)}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:64px 0 32px}
+.hero>*{animation:rise .8s both}.hero p{animation-delay:.2s}.hero .ctas{animation-delay:.35s}.hero .strip{animation-delay:.5s}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.eyebrow{font-weight:700;color:var(--accent);margin:0 0 10px}
+h1{font-size:clamp(3.2rem,13vw,8rem);line-height:.92;margin:0 0 20px;font-weight:800;letter-spacing:-.03em}
+.hero p.lead{max-width:30em;font-size:1.3rem;margin:0 0 22px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;background:var(--accent);color:var(--bg);text-decoration:none;font-weight:700;border:2px solid var(--accent);cursor:pointer;font-size:16px}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink)}
+.ctas{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));border-top:2px solid var(--ink)}
+.stat{padding:16px 16px 4px 0}.stat b{display:block;font-size:2.2rem;line-height:1.1}.stat span{color:var(--soft);font-size:15px}
+.stat.ph b{color:var(--soft);border-bottom:2px dashed var(--soft);display:inline-block}
 .story{height:600vh;position:relative}
 .pin{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
 .glow{position:absolute;inset:0;transition:opacity .8s}
-.txt{position:absolute;left:0;right:0;top:11vh;display:grid;padding:0 24px;text-align:center}
-.blk{grid-area:1/1;max-width:700px;margin:0 auto;will-change:opacity}
-.blk .d{font:700 15px "Bricolage Grotesque",sans-serif;color:var(--c);margin:0}
-.blk h2{font-size:clamp(1.9rem,6vw,3.4rem);line-height:1.05;margin:6px 0;letter-spacing:-.02em}
-.blk .r{margin:0 0 14px;color:var(--soft);font-size:1rem}
-.blk ul{list-style:none;margin:0;padding:0;font-size:1rem}
-.blk li{margin:5px 0}
-.hint{position:absolute;left:0;right:0;bottom:33vh;text-align:center;font:700 14px "Bricolage Grotesque",sans-serif;color:var(--soft);transition:opacity .4s;pointer-events:none}
+.txt{position:absolute;left:0;right:0;top:9vh;display:grid;padding:0 24px;text-align:center}
+.blk{grid-area:1/1;max-width:680px;margin:0 auto}
+.pill{display:inline-block;padding:4px 14px;border-radius:999px;background:var(--c);color:#fff;font-weight:800;font-size:14px}
+.blk .d{font-weight:700;color:var(--soft);margin:8px 0 0;font-size:15px}
+.blk h2{font-size:clamp(1.8rem,5.6vw,3.2rem);line-height:1.05;margin:4px 0;letter-spacing:-.02em}
+.blk .r{margin:0 0 10px;color:var(--soft);font-size:1rem}
+.blk ul{list-style:none;margin:0;padding:0;font-size:1rem}.blk li{margin:4px 0}
+.blk a{font-weight:700;color:var(--accent)}
+.media{position:absolute;top:24vh;width:min(24vw,270px);display:none}
+@media (min-width:900px){.media{display:block}}
+.hint{position:absolute;left:0;right:0;bottom:33vh;text-align:center;font-weight:700;font-size:14px;color:var(--soft);transition:opacity .4s;pointer-events:none}
 .chart{position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 4px);width:100%;height:32vh;max-height:300px}
-.fig{cursor:pointer;outline:none}
-.fig .in{transition:opacity .6s,transform .6s,filter .6s}
-.fig.future .in{opacity:.18;filter:grayscale(1)}
-.fig.active .in{transform:translateY(-10px)}
+.fig{cursor:pointer;outline:none}.fig .in{transition:opacity .6s,transform .6s,filter .6s}
+.fig.future .in{opacity:.18;filter:grayscale(1)}.fig.active .in{transform:translateY(-10px)}
 .fig:focus-visible .in{filter:drop-shadow(0 0 5px var(--accent))}
-.lab{fill:var(--soft);font:500 15px "Bricolage Grotesque",sans-serif}.lab.active{fill:var(--ink);font-weight:800}
+.lab{fill:var(--soft);font:500 15px Aptos,"Segoe UI",system-ui,sans-serif}.lab.active{fill:var(--ink);font-weight:800}
 .trk{stroke:var(--c);transition:stroke .6s}
+.frame{background:#fff;padding:8px 8px 6px;border-radius:4px;box-shadow:0 8px 24px rgba(20,22,43,.25)}
+.frame .ph,.frame img,.frame video{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px}
+.ph{display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;background:var(--tint);color:var(--soft);font-size:14px;border:2px dashed var(--soft)}
+.frame figcaption{color:#51557A;font-size:13px;padding-top:6px}
 section.pad{padding:96px 0 0}
-h2.sec{font-size:clamp(1.8rem,5vw,2.6rem);margin:0 0 22px;letter-spacing:-.02em}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+h2.sec{font-size:clamp(1.8rem,5vw,2.6rem);margin:0 0 10px;letter-spacing:-.02em}
+.sub{color:var(--soft);margin:0 0 22px;max-width:36em}
+.brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;list-style:none;padding:0;margin:0 0 28px}
+.brands a{display:block;padding:14px 16px;border:2px solid var(--ink);border-radius:8px;text-decoration:none;font-weight:700}
+.brands a:hover{background:var(--tint)}.brands small{display:block;font-weight:400;color:var(--soft)}
+.case{border:2px solid var(--ink);border-radius:8px;padding:8px 20px}
+.case h3{margin:12px 0 0}.case dl{margin:8px 0}
+.case dt{font-weight:800;color:var(--accent);margin-top:10px}.case dd{margin:0;color:var(--soft)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
 .tab{padding:9px 18px;border-radius:999px;border:2px solid var(--ink);background:transparent;font-weight:700;font-size:15px;cursor:pointer}
 .tab[aria-pressed=true]{background:var(--ink);color:var(--bg)}
 .chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none;min-height:96px}
-.chips li{padding:8px 16px;border-radius:999px;background:var(--tint);font:500 15px "Bricolage Grotesque",sans-serif;animation:rise .4s both}
-.work{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-.slot{min-height:180px;padding:22px;border:2px dashed var(--soft);border-radius:6px;display:flex;flex-direction:column;justify-content:flex-end}
-.slot h3{margin:0 0 4px}.slot p{margin:0;color:var(--soft);font-size:16px}
-.mail{font:700 clamp(1.2rem,4.5vw,2.2rem) "Bricolage Grotesque",sans-serif;word-break:break-all}
-.copy{margin-left:10px;padding:8px 16px;border-radius:999px;border:2px solid var(--ink);background:transparent;font-weight:700;cursor:pointer}
+.chips li{padding:8px 16px;border-radius:999px;background:var(--tint);font-weight:500;font-size:15px;animation:rise .4s both}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.gal .frame:nth-child(odd){transform:rotate(-1.2deg)}.gal .frame:nth-child(even){transform:rotate(1deg)}
+.mail{font-weight:800;font-size:clamp(1.2rem,4.5vw,2rem);word-break:break-all}
 footer{margin-top:80px;border-top:1px solid var(--line);padding:22px 0;color:var(--soft);font-size:15px}
+.wh{font-size:1.45rem;margin:56px 0 6px;letter-spacing:-.01em}
+.vgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;align-items:start}
+.vid h4{margin:10px 0 2px;font-size:1.05rem}.vid .r{margin:0 0 6px;color:var(--soft);font-size:15px}
+.poster{position:relative;background:var(--tint);border-radius:8px;overflow:hidden}
+.poster button{display:block;position:relative;width:100%;height:100%;border:0;padding:0;background:none;cursor:pointer}
+.poster img,.poster iframe{display:block;width:100%;height:100%;object-fit:cover;border:0}
+.play{position:absolute;left:12px;bottom:12px;padding:6px 14px;border-radius:999px;background:var(--accent);color:var(--bg);font-weight:700;font-size:14px}
+.go{font-weight:700;color:var(--accent)}
+.wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;list-style:none;padding:0;margin:0 0 14px}
+.thumb{display:block;width:100%;border:0;padding:0;background:var(--tint);border-radius:6px;overflow:hidden;cursor:pointer}
+.thumb img{display:block;width:100%;height:auto}.ph.tall{aspect-ratio:4/5}
+.lb{border:0;padding:12px;max-width:min(92vw,1100px);background:var(--bg);color:var(--ink);border-radius:8px}
+.lb::backdrop{background:rgba(10,12,30,.82)}.lb img{display:block;max-width:100%;max-height:76vh;margin:0 auto}
+.lbc{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.wcard{display:grid;gap:0;text-decoration:none;border:2px solid var(--ink);border-radius:8px;overflow:hidden}
+.wcard img{display:block;width:100%;height:auto}.wcard>div{padding:16px 20px}
+.wcard h4{margin:10px 0 4px;font-size:1.3rem;line-height:1.35}.wcard .r{margin:0 0 8px;color:var(--soft);font-size:15px}
+.tg{display:inline-block;padding:4px 14px;border-radius:999px;background:var(--tint);font-weight:700;font-size:14px}
+@media (min-width:760px){.wcard{grid-template-columns:1.15fr 1fr;align-items:center}}
 @media (prefers-reduced-motion:reduce){.fig .in,.glow,.hero>*,.chips li{transition:none;animation:none}}
 </style>
 </head>
 <body>
-<div id="root"></div>
+<div id="root"><noscript><h1>Ameena PK</h1><p>Digital marketer in Dubai. Email me@ameenapk.art</p></noscript></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
 <script>
 const {useState,useEffect,useRef}=React, h=React.createElement;
-// Stage content: items marked (assumed) in the reply can be edited here.
+const MAIL='me@ameenapk.art', WA='https://wa.me/971509716093?text='+encodeURIComponent('Hi Ameena, I found your portfolio and would like to talk about a project.');
+// PHOTOS AND CLIPS: put a file path in any "src" (for example "img/campus.jpg" or "clips/class.mp4"). Empty means a placeholder shows.
 const S=[
-{y:"to 2017",d:"2005 – 2017",t:"Where the curiosity began",r:"School student · Kerala, India",c:"#E8A317",k:["Fell for books, stories and drawing","Grew up reading and writing in English and Malayalam","Started noticing how ideas get communicated"]},
-{y:"2017–20",d:"2017 – 2020",t:"Learning to write",r:"B.A. English Language and Literature · St. Aloysius College, Thrissur",c:"#2BA39A",k:["Studied literature and the craft of writing","Certified in Television and Video Production (2020)","Completed a Content Writing certification"]},
-{y:"2021–23",d:"2021 – 2023",t:"Moving into multimedia",r:"M.A. Multimedia · Little Flower College, Guruvayur",c:"#5B47E0",k:["Studied design, animation and moving image","Interned at MediaOne TV, Kozhikode (Mar–Apr 2022)","Wrote features and human-interest stories for broadcast and digital"]},
-{y:"2023–24",d:"Sep 2023 – Nov 2024",t:"Teaching design",r:"Assistant Professor · Majlis Arts and Science College, Malappuram",c:"#D4507A",k:["Taught Graphic Design, Animation and Web Design","Built curriculum around design thinking and real-world projects","Led interdisciplinary projects with faculty"]},
-{y:"2025–now",d:"Jan 2025 – Present",t:"Telling brand stories",r:"Social Media and Digital Marketing Executive · FMCG Brand, Dubai",c:"#3A6BE0",k:["Plan and run campaigns on Meta and TikTok","Create content in Photoshop, Illustrator and Canva","Turn performance reports into better content"]}];
-const N=S.length, clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
-const BODY=["#3B4A8C","#2BA39A","#2C2A6B","#D4507A","#3A6BE0"], SC=[.62,.82,.92,1,1];
+{tag:"Undergrad Era",y:"Undergrad",d:"Jul 2017 – Mar 2020",t:"Learning to write",r:"B.A. English Language and Literature · St. Aloysius College, Thrissur",c:"#2BA39A",k:["Studied literature and the craft of writing","Certified in Television and Video Production (2020)","Completed a Content Writing certification"],m:{src:"",alt:"Campus days"}},
+{tag:"Into Multimedia",y:"Multimedia",d:"Oct 2021 – Aug 2023",t:"Moving into multimedia",r:"M.A. Multimedia · Little Flower College, Guruvayur",c:"#5B47E0",k:["Studied design, animation and moving image","Built skills in Photoshop, Illustrator and video","Shifted from words alone to words, image and motion"],m:{src:"",alt:"Studio or project work"}},
+{tag:"Internship at MediaOne",y:"MediaOne",d:"Mar – Apr 2022",t:"Writing for broadcast",r:"Intern, Media Shelf Division · MediaOne TV, Kozhikode",c:"#C97A1E",k:["Wrote analytical pieces and features","Created human-interest stories for broadcast and digital","Published a first-person Life Story piece on MediaOne Shelf"],link:{href:"https://www.mediaoneonline.com/mediaone-shelf/life-story/dream-by-ameena-pk-214121",label:"Read the published piece (Malayalam)"},m:{src:"",alt:"MediaOne newsroom"}},
+{tag:"University Assistant Professor",y:"Professor",d:"Sep 2023 – Nov 2024",t:"Teaching design",r:"Assistant Professor · Majlis Arts and Science College, Malappuram",c:"#D4507A",k:["Taught Graphic Design, Animation and Web Design","Built curriculum around design thinking and real projects","Led interdisciplinary work with faculty"],m:{src:"",alt:"In the classroom"}},
+{tag:"Digital Marketer",y:"Marketer",d:"Jan 2025 – Present",t:"Running brand campaigns",r:"Social Media and Digital Marketing Executive · FMCG group, Dubai",c:"#3A6BE0",k:["Manage Alif Gold, Taj FMCG, Powerboom, Fruvita, Fruzee and more","Run paid and organic campaigns on Meta and TikTok","Turn performance reports into the next round of content"],m:{src:"",alt:"Behind a campaign"}}];
+const N=S.length, clamp=(v,a,b)=>Math.min(b,Math.max(a,v)), BODY=S.map(s=>s.c), SC=[.84,.9,.92,1,1];
+
+function Media({m,cap}){
+  const v=/\.(mp4|webm)$/i.test(m.src);
+  return h('figure',{className:'frame',style:{margin:0}},
+    !m.src?h('div',{className:'ph'},'Photo or clip: '+m.alt):v?h('video',{src:m.src,controls:true,muted:true,playsInline:true,preload:'none','aria-label':m.alt}):h('img',{src:m.src,alt:m.alt,loading:'lazy'}),
+    cap&&h('figcaption',null,m.alt));
+}
 
 function Fig({i,st,x,go}){
-  const sk="#C98B5E",hr="#2A1B16",lg=i===0?"#F4F4FA":"#2A2F55",b=BODY[i];
-  const arm=(x1,x2)=>h('line',{x1,y1:-98,x2,y2:-62,stroke:b,strokeWidth:9,strokeLinecap:'round'});
-  return h('g',{transform:`translate(${x} 190) scale(${SC[i]})`,className:'fig '+st,tabIndex:0,role:'button','aria-label':'Go to '+S[i].t,
+  const sk="#C98B5E",hr="#2A1B16",b=BODY[i];
+  const arm=(x1,x2)=>h('line',{x1,y1:-98,x2,y2:-62,stroke:b,strokeWidth:9,strokeLinecap:'round'}),ln={fill:'none',stroke:'#1B1F3B',strokeWidth:2};
+  return h('g',{transform:`translate(${x} 190) scale(${SC[i]})`,className:'fig '+st,tabIndex:0,role:'button','aria-label':'Go to '+S[i].tag,
     onClick:()=>go(i),onKeyDown:e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go(i)}}},
     h('g',{className:'in'},
-      i===0&&h('rect',{x:12,y:-106,width:26,height:46,rx:8,fill:'#E8A317'}),
-      h('rect',{x:-12,y:-56,width:10,height:56,rx:4,fill:lg}),h('rect',{x:2,y:-56,width:10,height:56,rx:4,fill:lg}),
-      arm(-20,-30),arm(20,30),
-      h('rect',{x:-21,y:-110,width:42,height:60,rx:14,fill:b}),
-      h('circle',{cy:-128,r:18,fill:sk}),
-      h('path',{d:'M-19 -128A19 19 0 0 1 19 -128Q10 -141 0 -141Q-10 -141 -19 -128Z',fill:hr}),
-      i>0&&h('circle',{cy:-148,r:7,fill:hr}),
-      i===1&&h('rect',{x:-46,y:-86,width:24,height:28,rx:3,fill:'#fff',stroke:'#1B1F3B',strokeWidth:3}),
-      i===2&&h('g',null,h('polygon',{points:'-28,-146 0,-160 28,-146 0,-132',fill:'#1B1F3B'}),h('line',{x1:24,y1:-147,x2:26,y2:-128,stroke:'#F2B33D',strokeWidth:3}),h('rect',{x:26,y:-80,width:6,height:32,rx:3,fill:'#F4E3B0'})),
-      i===3&&h('g',null,h('circle',{cx:-8,cy:-128,r:6,fill:'none',stroke:'#1B1F3B',strokeWidth:2}),h('circle',{cx:8,cy:-128,r:6,fill:'none',stroke:'#1B1F3B',strokeWidth:2}),h('rect',{x:24,y:-84,width:22,height:30,rx:3,fill:'#fff',stroke:'#1B1F3B',strokeWidth:3})),
-      i===4&&h('g',null,h('line',{x1:0,y1:-108,x2:0,y2:-80,stroke:'#fff',strokeWidth:3}),h('rect',{x:26,y:-84,width:12,height:22,rx:3,fill:'#1B1F3B'}),h('circle',{cx:44,cy:-152,r:9,fill:'#E8507A'}),h('circle',{cx:60,cy:-132,r:5,fill:'#F2B33D'}))
-    ));
+      h('rect',{x:-12,y:-56,width:10,height:56,rx:4,fill:'#2A2F55'}),h('rect',{x:2,y:-56,width:10,height:56,rx:4,fill:'#2A2F55'}),
+      arm(-20,-30),arm(20,30),h('rect',{x:-21,y:-110,width:42,height:60,rx:14,fill:b}),
+      h('circle',{cy:-128,r:18,fill:sk}),h('path',{d:'M-19 -128A19 19 0 0 1 19 -128Q10 -141 0 -141Q-10 -141 -19 -128Z',fill:hr}),h('circle',{cy:-148,r:7,fill:hr}),
+      i===0&&h('rect',{x:-46,y:-86,width:24,height:28,rx:3,fill:'#fff',stroke:'#1B1F3B',strokeWidth:3}),
+      i===1&&h('g',null,h('rect',{x:24,y:-92,width:28,height:20,rx:4,fill:'#1B1F3B'}),h('circle',{cx:38,cy:-82,r:6,fill:'#9C90FF'})),
+      i===2&&h('g',null,h('rect',{x:-46,y:-86,width:22,height:28,rx:3,fill:'#FFF4D6',stroke:'#1B1F3B',strokeWidth:3}),h('line',{x1:0,y1:-108,x2:0,y2:-78,stroke:'#fff',strokeWidth:3}),h('rect',{x:-6,y:-80,width:12,height:12,rx:2,fill:'#fff'})),
+      i===3&&h('g',null,h('circle',{cx:-8,cy:-128,r:6,...ln}),h('circle',{cx:8,cy:-128,r:6,...ln}),h('rect',{x:24,y:-84,width:22,height:30,rx:3,fill:'#fff',stroke:'#1B1F3B',strokeWidth:3})),
+      i===4&&h('g',null,h('rect',{x:26,y:-84,width:12,height:22,rx:3,fill:'#1B1F3B'}),h('circle',{cx:44,cy:-152,r:9,fill:'#E8507A'}),h('circle',{cx:60,cy:-132,r:5,fill:'#F2B33D'}))));
 }
 
 function Story(){
   const ref=useRef(),[p,setP]=useState(0);
-  useEffect(()=>{let q;const f=()=>{cancelAnimationFrame(q);q=requestAnimationFrame(()=>{const el=ref.current;if(!el)return;
-    setP(clamp(-el.getBoundingClientRect().top/(el.offsetHeight-innerHeight),0,1))})};
-    f();addEventListener('scroll',f,{passive:true});addEventListener('resize',f);
-    return()=>{removeEventListener('scroll',f);removeEventListener('resize',f)}},[]);
+  useEffect(()=>{let q;const f=()=>{cancelAnimationFrame(q);q=requestAnimationFrame(()=>{const el=ref.current;if(el)setP(clamp(-el.getBoundingClientRect().top/(el.offsetHeight-innerHeight),0,1))})};
+    f();addEventListener('scroll',f,{passive:true});addEventListener('resize',f);return()=>{removeEventListener('scroll',f);removeEventListener('resize',f)}},[]);
   const x=Math.min(p*N,N-.001),a=Math.floor(x);
   const go=i=>{const el=ref.current;scrollTo({top:el.getBoundingClientRect().top+scrollY+(el.offsetHeight-innerHeight)*(i+.5)/N,behavior:'smooth'})};
   const op=i=>{const u=x-i;if(u<0||u>1)return 0;return Math.min(i?clamp(u/.18,0,1):1,i<N-1?clamp((1-u)/.18,0,1):1)};
   const xm=clamp(100+200*(x-.5),40,960),narrow=innerWidth<640,vx=narrow?clamp(xm-250,0,500):0;
-  return h('div',{className:'story',ref,id:'story'},
-    h('div',{className:'pin',style:{'--c':S[a].c}},
-      S.map((s,i)=>h('div',{className:'glow',key:i,style:{opacity:i===a?1:0,background:`radial-gradient(ellipse 85% 55% at 50% 100%,${s.c}44,transparent 70%)`}})),
-      h('div',{className:'txt','aria-live':'polite'},S.map((s,i)=>{const o=op(i),u=x-i;
-        return h('div',{className:'blk',key:i,style:{opacity:o,transform:`translateY(${(1-o)*14}px)`,'--c':s.c,visibility:o?'visible':'hidden'}},
-          h('p',{className:'d'},s.d),h('h2',null,s.t),h('p',{className:'r'},s.r),
-          h('ul',null,s.k.map((k,j)=>{const ko=o*clamp((u-(i?.1:0)-j*.09)/.12,0,1);return h('li',{key:j,style:{opacity:ko,transform:`translateY(${(1-ko)*8}px)`}},k)})))})),
-      h('div',{className:'hint',style:{opacity:p<.02?1:0}},'Keep scrolling to follow her journey'),
-      h('svg',{className:'chart',viewBox:`${vx} 0 ${narrow?500:1000} 250`,preserveAspectRatio:'xMidYMax meet',role:'group','aria-label':'Evolution chart of Ameena\'s career'},
-        h('line',{x1:40,y1:196,x2:960,y2:196,stroke:'var(--line)',strokeWidth:4,strokeLinecap:'round'}),
-        h('line',{className:'trk',x1:40,y1:196,x2:xm,y2:196,strokeWidth:4,strokeLinecap:'round'}),
-        h('circle',{className:'trk',cx:xm,cy:196,r:7,fill:'var(--bg)',strokeWidth:4}),
-        S.map((s,i)=>{const st=i<a?'done':i===a?'active':'future',cx=100+200*i;
-          return h('g',{key:i},h(Fig,{i,st,x:cx,go}),h('text',{x:cx,y:226,textAnchor:'middle',className:'lab '+(i===a?'active':'')},s.y))}))));
+  return h('div',{className:'story',ref,id:'story'},h('div',{className:'pin',style:{'--c':S[a].c}},
+    S.map((s,i)=>h('div',{className:'glow',key:i,style:{opacity:i===a?1:0,background:`radial-gradient(ellipse 85% 55% at 50% 100%,${s.c}44,transparent 70%)`}})),
+    h('div',{className:'txt','aria-live':'polite'},S.map((s,i)=>{const o=op(i),u=x-i;
+      return h('div',{className:'blk',key:i,style:{opacity:o,transform:`translateY(${(1-o)*14}px)`,'--c':s.c,visibility:o?'visible':'hidden'}},
+        h('span',{className:'pill'},s.tag),h('p',{className:'d'},s.d),h('h2',null,s.t),h('p',{className:'r'},s.r),
+        h('ul',null,s.k.map((k,j)=>{const ko=o*clamp((u-(i?.1:0)-j*.09)/.12,0,1);return h('li',{key:j,style:{opacity:ko,transform:`translateY(${(1-ko)*8}px)`}},k)})),
+        s.link&&h('a',{href:s.link.href,target:'_blank',rel:'noopener'},s.link.label))})),
+    S.map((s,i)=>{const o=op(i);return h('div',{className:'media',key:i,style:{opacity:o,[i%2?'left':'right']:'4vw',transform:`rotate(${i%2?-3:3}deg) translateY(${(1-o)*20}px)`,visibility:o?'visible':'hidden'}},h(Media,{m:s.m,cap:true}))}),
+    h('div',{className:'hint',style:{opacity:p<.02?1:0}},'Keep scrolling to follow her journey'),
+    h('svg',{className:'chart',viewBox:`${vx} 0 ${narrow?500:1000} 250`,preserveAspectRatio:'xMidYMax meet',role:'group','aria-label':'Evolution chart of Ameena career stages'},
+      h('line',{x1:40,y1:196,x2:960,y2:196,stroke:'var(--line)',strokeWidth:4,strokeLinecap:'round'}),
+      h('line',{className:'trk',x1:40,y1:196,x2:xm,y2:196,strokeWidth:4,strokeLinecap:'round'}),
+      h('circle',{className:'trk',cx:xm,cy:196,r:7,fill:'var(--bg)',strokeWidth:4}),
+      S.map((s,i)=>{const cx=100+200*i;return h('g',{key:i},h(Fig,{i,st:i<a?'done':i===a?'active':'future',x:cx,go}),h('text',{x:cx,y:226,textAnchor:'middle',className:'lab '+(i===a?'active':'')},s.y))}))));
 }
 
-const SK={Educator:["Curriculum and training content","Graphic Design teaching","Animation teaching","Web Design teaching","Project-based learning","Student and stakeholder engagement"],
-Communicator:["Institutional and internal communications","Social media management","Content creation and editorial writing","Video production and AI content tools","Campaign reporting and analytics"],
-Tools:["Adobe Photoshop","Adobe Illustrator","Canva","Meta (Facebook and Instagram)","TikTok"]};
+const B=[["Powerboom Energy","powerboomenergy"],["Taj FMCG / Alif Gold","tajfmcg_alifgold"],["Buraaq Real Estate","buraaq_realestate"],["Fruvita Beverages","fruvitabeverages"],["Fruzee Beverages","fruzeebeverages1"],["Alif Beverages","alifbeverages"]];
+const CASE=[["Context","Powerboom Energy, Instagram reel, Meta. [add brand goal and timeframe]"],["Challenge","[add the problem]"],["Strategy","[add audience, message and channel mix]"],["Execution","[add formats, ad sets, budget range]"],["Results","[+X% reach] [+X% engagement] [X CPR] (indexed values are fine)"],["What I learned","[add one lesson]"]];
+const SK={"Paid media":["Meta Ads","TikTok Ads","Google Ads","LinkedIn Ads","Campaign reporting and analytics"],"Content and social":["Social media management","Content creation and editorial writing","Video production and AI content tools","Adobe Photoshop","Adobe Illustrator","Canva"],"Education and comms":["Curriculum and training content","Institutional and internal communications","Student and stakeholder engagement"]};
+const GAL=["Campus days","On a shoot","At MediaOne","In the classroom","Behind a campaign","Dubai"].map(a=>({src:"",alt:a}));
 
-function Skills(){
-  const [t,setT]=useState('Educator');
-  return h('section',{className:'pad',id:'skills'},h('h2',{className:'sec'},'What she brings'),
+/* SELECTED WORK. Data lives in /work as JSON; see README. GitHub Pages is static, so every gallery reads a manifest.json that scripts/build-manifests.py (or the GitHub Action) keeps in sync with the folder. */
+function useJ(u){const [d,setD]=useState(null);
+  useEffect(()=>{let ok=1;setD(null);if(u)fetch(u).then(r=>{if(!r.ok)throw 0;return r.json()}).then(x=>ok&&setD(x),()=>ok&&setD([]));return()=>{ok=0}},[u]);return d}
+
+function Lightbox({lb,setLb}){const r=useRef(),{list,i}=lb,m=list[i],n=list.length,cl=()=>r.current.close(),mv=k=>setLb({list,i:(i+k+n)%n});
+  useEffect(()=>{if(!r.current.open)r.current.showModal()},[]);
+  return h('dialog',{ref:r,className:'lb','aria-label':m.alt,onClose:()=>setLb(null),onClick:e=>{if(e.target===r.current)cl()},onKeyDown:e=>{if(e.key==='ArrowRight')mv(1);if(e.key==='ArrowLeft')mv(-1)}},
+    h('img',{src:m.src,alt:m.alt}),
+    h('div',{className:'lbc'},n>1&&h('button',{className:'tab',onClick:()=>mv(-1)},'Previous'),h('span',null,(i+1)+' of '+n),n>1&&h('button',{className:'tab',onClick:()=>mv(1)},'Next'),h('button',{className:'tab',onClick:cl},'Close')));}
+
+function Grid({items,empty,open}){
+  if(!items)return h('p',{className:'sub'},'Loading...');
+  if(!items.length)return h('div',{className:'wgrid'},[1,2,3].map(n=>h('div',{key:n,className:'ph tall'},empty)));
+  return h('ul',{className:'wgrid'},items.map((m,i)=>h('li',{key:m.src},h('button',{className:'thumb',onClick:()=>open(items,i),'aria-label':'View larger: '+m.alt},h('img',{src:m.src,alt:m.alt,width:m.w,height:m.h,loading:'lazy',decoding:'async'})))));}
+
+function Videos(){const v=useJ('work/videos/videos.json'),[on,setOn]=useState(null);
+  if(!v)return h('p',{className:'sub'},'Loading...');
+  return h('div',{className:'vgrid'},v.map(x=>{const id=((x.drive||'').match(/\/d\/([\w-]+)/)||[])[1],img=h('img',{src:x.poster,alt:x.alt||x.title,loading:'lazy'});
+    return h('article',{key:x.id,className:'vid'},
+      h('div',{className:'poster',style:{aspectRatio:x.aspect||'16 / 9'}},
+        on===x.id&&id?h('iframe',{src:'https://drive.google.com/file/d/'+id+'/preview',allow:'autoplay',allowFullScreen:true,title:x.title}):
+        id?h('button',{onClick:()=>setOn(x.id),'aria-label':'Play video: '+x.title},img,h('span',{className:'play'},'Play')):img),
+      h('h4',null,x.title),h('p',{className:'r'},x.desc),
+      id&&h('a',{className:'go',href:x.drive,target:'_blank',rel:'noopener'},'Open in Google Drive'));}));}
+
+function Writing(){const w=useJ('work/writing/writing.json');
+  if(!w||!w.length)return null;
+  return h('div',null,w.map(x=>h('a',{key:x.url,className:'wcard',href:x.url,target:'_blank',rel:'noopener'},
+    h('img',{src:x.image,alt:x.alt,width:1200,height:630,loading:'lazy',referrerPolicy:'no-referrer'}),
+    h('div',null,h('span',{className:'tg'},x.tag),h('h4',{lang:x.lang},x.title),x.en&&h('p',{className:'r'},'In English: '+x.en),
+      h('p',{className:'r'},[x.pub,x.date,x.credit].filter(Boolean).join(' · ')),h('span',{className:'go'},x.cta+' \u2192')))));}
+
+function Work(){const [lb,setLb]=useState(null),open=(list,i)=>setLb({list,i}),
+  bs=useJ('work/brands/brands.json'),[b,setB]=useState(0),cur=bs&&bs[b],bi=useJ(cur?cur.dir+'manifest.json':null),sp=useJ('work/school-posters/manifest.json');
+  return h('section',{className:'pad',id:'selected-work'},h('h2',{className:'sec'},'Selected work'),
+    h('p',{className:'sub'},'AI-generated video, poster pipelines, brand content and published writing.'),
+    h('h3',{className:'wh'},'Generated videos'),h('p',{className:'sub'},'[Add one line: how these were generated, tools used]'),h(Videos),
+    h('h3',{className:'wh'},'Hundreds of school posters'),h('p',{className:'sub'},'Generated and validated with AI pipelines. A sample of six is shown. [Add: tools, how validation works, total count]'),
+    h(Grid,{items:sp,empty:'Poster: add images to work/school-posters/',open}),
+    h('h3',{className:'wh'},'Brand posts'),
+    bs&&h('div',{className:'tabs'},bs.map((x,i)=>h('button',{key:x.id,className:'tab','aria-pressed':b===i,onClick:()=>setB(i)},x.name))),
+    cur&&h(Grid,{items:bi,empty:'Post: add images to '+cur.dir,open}),
+    cur&&h('a',{className:'go',href:'https://www.instagram.com/'+cur.handle+'/',target:'_blank',rel:'noopener'},'See @'+cur.handle+' on Instagram'),
+    h('h3',{className:'wh'},'Published writing'),h(Writing),
+    lb&&h(Lightbox,{lb,setLb}));}
+
+function Skills(){const [t,setT]=useState('Paid media');
+  return h('section',{className:'pad',id:'skills'},h('h2',{className:'sec'},'Skills'),
     h('div',{className:'tabs'},Object.keys(SK).map(k=>h('button',{key:k,className:'tab','aria-pressed':t===k,onClick:()=>setT(k)},k))),
-    h('ul',{className:'chips',key:t},SK[t].map(s=>h('li',{key:s},s))));
-}
+    h('ul',{className:'chips',key:t},SK[t].map(s=>h('li',{key:s},s))));}
 
-function Contact(){
-  const [ok,setOk]=useState(false),m='ameenapk3011@gmail.com';
-  const copy=()=>{try{navigator.clipboard.writeText(m).then(()=>setOk(true))}catch(e){setOk(false)};setTimeout(()=>setOk(false),2000)};
-  return h('section',{className:'pad',id:'contact'},h('h2',{className:'sec'},'Contact'),
-    h('p',null,h('a',{className:'mail',href:'mailto:'+m},m),h('button',{className:'copy',onClick:copy},ok?'Copied':'Copy email')),
-    h('p',null,h('a',{href:'tel:+971509716093'},'+971 50 971 6093'),' | Dubai, UAE'));
-}
+function Contact(){const [ok,setOk]=useState(false);
+  const copy=()=>{try{navigator.clipboard.writeText(MAIL).then(()=>setOk(true))}catch(e){};setTimeout(()=>setOk(false),2000)};
+  return h('section',{className:'pad',id:'contact'},h('h2',{className:'sec'},'Let us talk'),
+    h('p',{className:'sub'},'Open to Marketing Generalist roles in Dubai and to freelance projects.'),
+    h('div',{className:'ctas'},h('a',{className:'btn',href:WA,target:'_blank',rel:'noopener'},'Book a call on WhatsApp'),h('a',{className:'btn alt',href:'mailto:'+MAIL+'?subject=Portfolio%20enquiry'},'Email me'),h('button',{className:'btn alt',onClick:copy},ok?'Copied':'Copy email')),
+    h('p',null,h('span',{className:'mail'},MAIL)));}
 
 function App(){
-  const toggle=()=>{const r=document.documentElement,cur=r.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');r.dataset.theme=cur==='dark'?'light':'dark'};
-  return h(React.Fragment,null,
-    h('button',{className:'theme',onClick:toggle,'aria-label':'Switch light or dark theme'},'Theme'),
-    h('div',{className:'wrap'},h('header',{className:'hero'},
-      h('h1',null,'Ameena PK'),
-      h('p',null,'Educator and communicator. I teach design, run digital content, and help institutions tell their story.'),
-      h('div',{className:'cue'},'Scroll to follow her journey, from school to today'))),
+  const toggle=()=>{const r=document.documentElement,c=r.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');r.dataset.theme=c==='dark'?'light':'dark'};
+  return h(React.Fragment,null,h('button',{className:'theme',onClick:toggle,'aria-label':'Switch light or dark theme'},'Theme'),
+    h('main',null,h('div',{className:'wrap'},h('header',{className:'hero'},
+      h('p',{className:'eyebrow'},'Digital marketer · Dubai, UAE'),h('h1',null,'Ameena PK'),
+      h('p',{className:'lead'},'AI-based content and strategy for the new era. Campaigns across Meta, TikTok and Google, backed by a teaching background.'),
+      h('div',{className:'ctas'},h('a',{className:'btn',href:WA,target:'_blank',rel:'noopener'},'Book a call'),h('a',{className:'btn alt',href:'#story'},'See my journey')),
+      h('div',{className:'strip'},h('div',{className:'stat'},h('b',null,'6'),h('span',null,'brand pages managed')),h('div',{className:'stat'},h('b',null,'4'),h('span',null,'ad platforms: Meta, Google, TikTok, LinkedIn')),
+        h('div',{className:'stat ph'},h('b',null,'[+X%]'),h('span',null,'engagement, to be added')),h('div',{className:'stat ph'},h('b',null,'[X]'),h('span',null,'campaign result, to be added'))))),
     h(Story),
-    h('div',{className:'wrap'},h(Skills),
-      h('section',{className:'pad',id:'work'},h('h2',{className:'sec'},'Selected work'),
-        h('div',{className:'work'},['Social media campaign','Student design projects','Articles and video'].map(n=>h('div',{className:'slot',key:n},h('h3',null,n),h('p',null,'Placeholder until Ameena shares samples.'))))),
-      h(Contact),h('footer',null,'\u00A9 2026 Ameena PK')));
+    h('div',{className:'wrap'},
+      h(Work),
+      h('section',{className:'pad',id:'work'},h('h2',{className:'sec'},'Brands I handle'),h('p',{className:'sub'},'Instagram pages I manage, with matching Facebook and TikTok accounts and paid ads.'),
+        h('ul',{className:'brands'},B.map(([n,u])=>h('li',{key:u},h('a',{href:'https://www.instagram.com/'+u+'/',target:'_blank',rel:'noopener'},n,h('small',null,'@'+u))))),
+        h('div',{className:'case'},h('h3',null,'Case study: Powerboom Energy reel (template)'),h('p',{className:'sub'},'Add real details. Placeholders are in brackets.'),
+          h('a',{href:'https://www.instagram.com/powerboomenergy/reel/DQO_YfpEliT/',target:'_blank',rel:'noopener'},'View the reel'),
+          h('dl',null,CASE.map(([k,v])=>h(React.Fragment,{key:k},h('dt',null,k),h('dd',null,v)))))),
+      h(Skills),
+      h('section',{className:'pad',id:'moments'},h('h2',{className:'sec'},'Moments'),h('p',{className:'sub'},'Photos and clips from the journey.'),h('div',{className:'gal'},GAL.map(m=>h(Media,{key:m.alt,m,cap:true})))),
+      h(Contact),h('footer',null,'\u00A9 2026 Ameena PK'))));
 }
 ReactDOM.createRoot(document.getElementById('root')).render(h(App));
 </script>

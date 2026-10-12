@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ameenapk.art/sitemap.xml
