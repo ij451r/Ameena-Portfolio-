@@ -1,11 +1,15 @@
 [
   {
     "src": "work/brands/alifgold/alif-all-5.jpg",
-    "alt": "alif all 5"
+    "alt": "alif all 5",
+    "w": 1122,
+    "h": 1402
   },
   {
     "src": "work/brands/alifgold/alif-cola-23.jpg",
-    "alt": "alif cola 23"
+    "alt": "alif cola 23",
+    "w": 1296,
+    "h": 1616
   },
   {
     "src": "work/brands/alifgold/alif-orange-3.jpg",
@@ -14,5 +18,8 @@
   {
     "src": "work/brands/alifgold/IMG-20261012-WA0008(1).jpg",
     "alt": "IMG 20261012 WA0008(1)"
+    "alt": "alif orange 3",
+    "w": 1122,
+    "h": 1402
   }
 ]
