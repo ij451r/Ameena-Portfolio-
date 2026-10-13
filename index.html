@@ -12,6 +12,7 @@
 <meta name="twitter:title" content="Ameena PK | Digital Marketer, Dubai"><meta name="twitter:image" content="https://ameenapk.art/og.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ameena PK","jobTitle":"Digital Marketer","url":"https://ameenapk.art/","email":"me@ameenapk.art","address":{"@type":"PostalAddress","addressLocality":"Dubai","addressCountry":"AE"},"alumniOf":["Little Flower College, Guruvayur","St. Aloysius College, Thrissur"],"knowsAbout":["Social media marketing","Meta Ads","TikTok Ads","Google Ads","LinkedIn Ads","Content creation"]}</script>
 <!-- GA4 SLOT: paste your gtag snippet here once you have a Measurement ID. Set consent default to denied and update it from your cookie banner. Not added on purpose. -->
+<link rel="preload" href="work/content.json" as="fetch" crossorigin>
 <style>
 :root{--bg:#F5F6FB;--ink:#1B1F3B;--soft:#51557A;--accent:#4F3FD9;--tint:#E3E1FA;--line:#CFD1E6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14162B;--ink:#EEEFFA;--soft:#A9ACD0;--accent:#9C90FF;--tint:#25285A;--line:#33376B}}
@@ -106,27 +107,22 @@ footer{margin-top:80px;border-top:1px solid var(--line);padding:22px 0;color:var
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
 <script>
 const {useState,useEffect,useRef}=React, h=React.createElement;
-const MAIL='me@ameenapk.art', WA='https://wa.me/971509716093?text='+encodeURIComponent('Hi Ameena, I found your portfolio and would like to talk about a project.');
-// PHOTOS AND CLIPS: put a file path in any "src" (for example "img/campus.jpg" or "clips/class.mp4"). Empty means a placeholder shows.
-const S=[
-{tag:"Undergrad Era",y:"Undergrad",d:"Jul 2017 – Mar 2020",t:"Learning to write",r:"B.A. English Language and Literature · St. Aloysius College, Thrissur",c:"#2BA39A",k:["Studied literature and the craft of writing","Certified in Television and Video Production (2020)","Completed a Content Writing certification"],m:{src:"",alt:"Campus days"}},
-{tag:"Into Multimedia",y:"Multimedia",d:"Oct 2021 – Aug 2023",t:"Moving into multimedia",r:"M.A. Multimedia · Little Flower College, Guruvayur",c:"#5B47E0",k:["Studied design, animation and moving image","Built skills in Photoshop, Illustrator and video","Shifted from words alone to words, image and motion"],m:{src:"",alt:"Studio or project work"}},
-{tag:"Internship at MediaOne",y:"MediaOne",d:"Mar – Apr 2022",t:"Writing for broadcast",r:"Intern, Media Shelf Division · MediaOne TV, Kozhikode",c:"#C97A1E",k:["Wrote analytical pieces and features","Created human-interest stories for broadcast and digital","Published a first-person Life Story piece on MediaOne Shelf"],link:{href:"https://www.mediaoneonline.com/mediaone-shelf/life-story/dream-by-ameena-pk-214121",label:"Read the published piece (Malayalam)"},m:{src:"",alt:"MediaOne newsroom"}},
-{tag:"University Assistant Professor",y:"Professor",d:"Sep 2023 – Nov 2024",t:"Teaching design",r:"Assistant Professor · Majlis Arts and Science College, Malappuram",c:"#D4507A",k:["Taught Graphic Design, Animation and Web Design","Built curriculum around design thinking and real projects","Led interdisciplinary work with faculty"],m:{src:"",alt:"In the classroom"}},
-{tag:"Digital Marketer",y:"Marketer",d:"Jan 2025 – Present",t:"Running brand campaigns",r:"Social Media and Digital Marketing Executive · FMCG group, Dubai",c:"#3A6BE0",k:["Manage Alif Gold, Taj FMCG, Powerboom, Fruvita, Fruzee and more","Run paid and organic campaigns on Meta and TikTok","Turn performance reports into the next round of content"],m:{src:"",alt:"Behind a campaign"}}];
-const N=S.length, clamp=(v,a,b)=>Math.min(b,Math.max(a,v)), BODY=S.map(s=>s.c), SC=[.84,.9,.92,1,1];
+let MAIL,WA;
+// ALL TEXT, STAGES, PHOTOS AND LISTS live in work/content.json. Edit that file, not this one. A "src" can be an image or .mp4 path; empty shows a placeholder.
+let S,N,BODY,B,SK,GAL,C;
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v)), SC=[.84,.9,.92,1,1];
 
 function Media({m,cap}){
   const v=/\.(mp4|webm)$/i.test(m.src);
   return h('figure',{className:'frame',style:{margin:0}},
-    !m.src?h('div',{className:'ph'},'Photo or clip: '+m.alt):v?h('video',{src:m.src,controls:true,muted:true,playsInline:true,preload:'none','aria-label':m.alt}):h('img',{src:m.src,alt:m.alt,loading:'lazy'}),
+    !m.src?h('div',{className:'ph'},C.labels.photoPlaceholder+m.alt):v?h('video',{src:m.src,controls:true,muted:true,playsInline:true,preload:'none','aria-label':m.alt}):h('img',{src:m.src,alt:m.alt,loading:'lazy'}),
     cap&&h('figcaption',null,m.alt));
 }
 
 function Fig({i,st,x,go}){
   const sk="#C98B5E",hr="#2A1B16",b=BODY[i];
   const arm=(x1,x2)=>h('line',{x1,y1:-98,x2,y2:-62,stroke:b,strokeWidth:9,strokeLinecap:'round'}),ln={fill:'none',stroke:'#1B1F3B',strokeWidth:2};
-  return h('g',{transform:`translate(${x} 190) scale(${SC[i]})`,className:'fig '+st,tabIndex:0,role:'button','aria-label':'Go to '+S[i].tag,
+  return h('g',{transform:`translate(${x} 190) scale(${SC[i]||1})`,className:'fig '+st,tabIndex:0,role:'button','aria-label':'Go to '+S[i].tag,
     onClick:()=>go(i),onKeyDown:e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go(i)}}},
     h('g',{className:'in'},
       h('rect',{x:-12,y:-56,width:10,height:56,rx:4,fill:'#2A2F55'}),h('rect',{x:2,y:-56,width:10,height:56,rx:4,fill:'#2A2F55'}),
@@ -163,10 +159,6 @@ function Story(){
       S.map((s,i)=>{const cx=100+200*i;return h('g',{key:i},h(Fig,{i,st:i<a?'done':i===a?'active':'future',x:cx,go}),h('text',{x:cx,y:226,textAnchor:'middle',className:'lab '+(i===a?'active':'')},s.y))}))));
 }
 
-const B=[["Powerboom Energy","powerboomenergy"],["Taj FMCG / Alif Gold","tajfmcg_alifgold"],["Buraaq Real Estate","buraaq_realestate"],["Fruvita Beverages","fruvitabeverages"],["Fruzee Beverages","fruzeebeverages1"],["Alif Beverages","alifbeverages"]];
-const CASE=[["Context","Powerboom Energy, Instagram reel, Meta. [add brand goal and timeframe]"],["Challenge","[add the problem]"],["Strategy","[add audience, message and channel mix]"],["Execution","[add formats, ad sets, budget range]"],["Results","[+X% reach] [+X% engagement] [X CPR] (indexed values are fine)"],["What I learned","[add one lesson]"]];
-const SK={"Paid media":["Meta Ads","TikTok Ads","Google Ads","LinkedIn Ads","Campaign reporting and analytics"],"Content and social":["Social media management","Content creation and editorial writing","Video production and AI content tools","Adobe Photoshop","Adobe Illustrator","Canva"],"Education and comms":["Curriculum and training content","Institutional and internal communications","Student and stakeholder engagement"]};
-const GAL=["Campus days","On a shoot","At MediaOne","In the classroom","Behind a campaign","Dubai"].map(a=>({src:"",alt:a}));
 
 /* SELECTED WORK. Data lives in /work as JSON; see README. GitHub Pages is static, so every gallery reads a manifest.json that scripts/build-manifests.py (or the GitHub Action) keeps in sync with the folder. */
 function useJ(u){const [d,setD]=useState(null);
@@ -202,52 +194,50 @@ function Writing(){const w=useJ('work/writing/writing.json');
 
 function Work(){const [lb,setLb]=useState(null),open=(list,i)=>setLb({list,i}),
   bs=useJ('work/brands/brands.json'),[b,setB]=useState(0),cur=bs&&bs[b],bi=useJ(cur?cur.dir+'manifest.json':null),sp=useJ('work/school-posters/manifest.json');
-  return h('section',{className:'pad',id:'selected-work'},h('h2',{className:'sec'},'Selected work'),
-    h('p',{className:'sub'},'AI-generated video, poster pipelines, brand content and published writing.'),
-    h('h3',{className:'wh'},'Generated videos'),h('p',{className:'sub'},'[Add one line: how these were generated, tools used]'),h(Videos),
-    h('h3',{className:'wh'},'Hundreds of school posters'),h('p',{className:'sub'},'Generated and validated with AI pipelines. A sample of six is shown. [Add: tools, how validation works, total count]'),
-    h(Grid,{items:sp,empty:'Poster: add images to work/school-posters/',open}),
-    h('h3',{className:'wh'},'Brand posts'),
+  return h('section',{className:'pad',id:'selected-work'},h('h2',{className:'sec'},C.work.title),
+    h('p',{className:'sub'},C.work.intro),
+    h('h3',{className:'wh'},C.work.videosTitle),h('p',{className:'sub'},C.work.videos),h(Videos),
+    h('h3',{className:'wh'},C.work.postersTitle),h('p',{className:'sub'},C.work.posters),
+    h(Grid,{items:sp,empty:C.work.empty,open}),
+    h('h3',{className:'wh'},C.work.brandsTitle),
     bs&&h('div',{className:'tabs'},bs.map((x,i)=>h('button',{key:x.id,className:'tab','aria-pressed':b===i,onClick:()=>setB(i)},x.name))),
-    cur&&h(Grid,{items:bi,empty:'Post: add images to '+cur.dir,open}),
+    cur&&h(Grid,{items:bi,empty:C.work.empty,open}),
     cur&&h('a',{className:'go',href:'https://www.instagram.com/'+cur.handle+'/',target:'_blank',rel:'noopener'},'See @'+cur.handle+' on Instagram'),
-    h('h3',{className:'wh'},'Published writing'),h(Writing),
+    h('h3',{className:'wh'},C.work.writingTitle),h(Writing),
     lb&&h(Lightbox,{lb,setLb}));}
 
 function Skills(){const [t,setT]=useState('Paid media');
-  return h('section',{className:'pad',id:'skills'},h('h2',{className:'sec'},'Skills'),
+  return h('section',{className:'pad',id:'skills'},h('h2',{className:'sec'},C.labels.skills),
     h('div',{className:'tabs'},Object.keys(SK).map(k=>h('button',{key:k,className:'tab','aria-pressed':t===k,onClick:()=>setT(k)},k))),
     h('ul',{className:'chips',key:t},SK[t].map(s=>h('li',{key:s},s))));}
 
 function Contact(){const [ok,setOk]=useState(false);
   const copy=()=>{try{navigator.clipboard.writeText(MAIL).then(()=>setOk(true))}catch(e){};setTimeout(()=>setOk(false),2000)};
-  return h('section',{className:'pad',id:'contact'},h('h2',{className:'sec'},'Let us talk'),
-    h('p',{className:'sub'},'Open to Marketing Generalist roles in Dubai and to freelance projects.'),
-    h('div',{className:'ctas'},h('a',{className:'btn',href:WA,target:'_blank',rel:'noopener'},'Book a call on WhatsApp'),h('a',{className:'btn alt',href:'mailto:'+MAIL+'?subject=Portfolio%20enquiry'},'Email me'),h('button',{className:'btn alt',onClick:copy},ok?'Copied':'Copy email')),
+  return h('section',{className:'pad',id:'contact'},h('h2',{className:'sec'},C.contact.title),
+    h('p',{className:'sub'},C.contact.intro),
+    h('div',{className:'ctas'},h('a',{className:'btn',href:WA,target:'_blank',rel:'noopener'},C.contact.whatsappLabel),h('a',{className:'btn alt',href:'mailto:'+MAIL+'?subject=Portfolio%20enquiry'},C.contact.emailLabel),h('button',{className:'btn alt',onClick:copy},ok?'Copied':'Copy email')),
     h('p',null,h('span',{className:'mail'},MAIL)));}
 
 function App(){
   const toggle=()=>{const r=document.documentElement,c=r.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');r.dataset.theme=c==='dark'?'light':'dark'};
   return h(React.Fragment,null,h('button',{className:'theme',onClick:toggle,'aria-label':'Switch light or dark theme'},'Theme'),
     h('main',null,h('div',{className:'wrap'},h('header',{className:'hero'},
-      h('p',{className:'eyebrow'},'Digital marketer · Dubai, UAE'),h('h1',null,'Ameena PK'),
-      h('p',{className:'lead'},'AI-based content and strategy for the new era. Campaigns across Meta, TikTok and Google, backed by a teaching background.'),
-      h('div',{className:'ctas'},h('a',{className:'btn',href:WA,target:'_blank',rel:'noopener'},'Book a call'),h('a',{className:'btn alt',href:'#story'},'See my journey')),
-      h('div',{className:'strip'},h('div',{className:'stat'},h('b',null,'6'),h('span',null,'brand pages managed')),h('div',{className:'stat'},h('b',null,'4'),h('span',null,'ad platforms: Meta, Google, TikTok, LinkedIn')),
-        h('div',{className:'stat ph'},h('b',null,'[+X%]'),h('span',null,'engagement, to be added')),h('div',{className:'stat ph'},h('b',null,'[X]'),h('span',null,'campaign result, to be added'))))),
+      h('p',{className:'eyebrow'},C.hero.eyebrow),h('h1',null,C.hero.title),
+      h('p',{className:'lead'},C.hero.lead),
+      h('div',{className:'ctas'},h('a',{className:'btn',href:WA,target:'_blank',rel:'noopener'},C.hero.cta1),h('a',{className:'btn alt',href:'#story'},C.hero.cta2)),
+      h('div',{className:'strip'},C.stats.map(x=>h('div',{key:x.label,className:'stat'+(x.ph?' ph':'')},h('b',null,x.value),h('span',null,x.label)))))),
     h(Story),
     h('div',{className:'wrap'},
       h(Work),
-      h('section',{className:'pad',id:'work'},h('h2',{className:'sec'},'Brands I handle'),h('p',{className:'sub'},'Instagram pages I manage, with matching Facebook and TikTok accounts and paid ads.'),
-        h('ul',{className:'brands'},B.map(([n,u])=>h('li',{key:u},h('a',{href:'https://www.instagram.com/'+u+'/',target:'_blank',rel:'noopener'},n,h('small',null,'@'+u))))),
-        h('div',{className:'case'},h('h3',null,'Case study: Powerboom Energy reel (template)'),h('p',{className:'sub'},'Add real details. Placeholders are in brackets.'),
-          h('a',{href:'https://www.instagram.com/powerboomenergy/reel/DQO_YfpEliT/',target:'_blank',rel:'noopener'},'View the reel'),
-          h('dl',null,CASE.map(([k,v])=>h(React.Fragment,{key:k},h('dt',null,k),h('dd',null,v)))))),
+      h('section',{className:'pad',id:'work'},h('h2',{className:'sec'},C.brands.title),h('p',{className:'sub'},C.brands.intro),
+        h('ul',{className:'brands'},B.map(({name:n,handle:u})=>h('li',{key:u},h('a',{href:'https://www.instagram.com/'+u+'/',target:'_blank',rel:'noopener'},n,h('small',null,'@'+u)))))),
       h(Skills),
-      h('section',{className:'pad',id:'moments'},h('h2',{className:'sec'},'Moments'),h('p',{className:'sub'},'Photos and clips from the journey.'),h('div',{className:'gal'},GAL.map(m=>h(Media,{key:m.alt,m,cap:true})))),
-      h(Contact),h('footer',null,'\u00A9 2026 Ameena PK'))));
+      h('section',{className:'pad',id:'moments'},h('h2',{className:'sec'},C.moments.title),h('p',{className:'sub'},C.moments.intro),h('div',{className:'gal'},GAL.map(m=>h(Media,{key:m.alt,m,cap:true})))),
+      h(Contact),h('footer',null,C.footer))));
 }
-ReactDOM.createRoot(document.getElementById('root')).render(h(App));
+fetch('work/content.json').then(r=>r.json()).then(c=>{C=c;S=c.stages;N=S.length;BODY=S.map(x=>x.c);B=c.brands.items;SK=c.skills;GAL=c.moments.items;
+  MAIL=c.contact.email;WA='https://wa.me/'+c.contact.whatsapp+'?text='+encodeURIComponent(c.contact.waText);
+  ReactDOM.createRoot(document.getElementById('root')).render(h(App))}).catch(()=>{document.getElementById('root').textContent='Ameena PK. Content could not load. Please email me@ameenapk.art.'});
 </script>
 </body>
 </html>

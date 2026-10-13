@@ -1,0 +1,219 @@
+{
+ "hero": {
+  "eyebrow": "Digital marketer · Dubai, UAE",
+  "title": "Ameena PK",
+  "lead": "AI-based content and strategy for the new era. Campaigns across Meta, TikTok and Google, backed by a teaching background.",
+  "cta1": "Book a call",
+  "cta2": "See my journey"
+ },
+ "stats": [
+  {
+   "value": "",
+   "label": "Created data pipelines to generate and upacale content",
+   "ph": true
+  },
+  {
+   "value": "",
+   "label": "Managed Ad campaigns and handled lead qualification",
+   "ph": true
+  }
+ ],
+ "stages": [
+  {
+   "tag": "Undergrad Era",
+   "y": "Undergrad",
+   "d": "Jul 2017 – Mar 2020",
+   "t": "Learning to write",
+   "r": "B.A. English Language and Literature · St. Aloysius College, Thrissur",
+   "c": "#2BA39A",
+   "k": [
+    "Studied literature and the craft of writing",
+    "Certified in Television and Video Production (2020)",
+    "Completed a Content Writing certification"
+   ],
+   "m": {
+    "src": "",
+    "alt": "Campus days"
+   }
+  },
+  {
+   "tag": "Into Multimedia",
+   "y": "Multimedia",
+   "d": "Oct 2021 – Aug 2023",
+   "t": "Moving into multimedia",
+   "r": "M.A. Multimedia · Little Flower College, Guruvayur",
+   "c": "#5B47E0",
+   "k": [
+    "Studied design, animation and moving image",
+    "Built skills in Photoshop, Illustrator and video",
+    "Shifted from words alone to words, image and motion"
+   ],
+   "m": {
+    "src": "",
+    "alt": "Studio or project work"
+   }
+  },
+  {
+   "tag": "Internship at MediaOne",
+   "y": "MediaOne",
+   "d": "Mar – Apr 2022",
+   "t": "Writing for broadcast",
+   "r": "Intern, Media Shelf Division · MediaOne TV, Kozhikode",
+   "c": "#C97A1E",
+   "k": [
+    "Wrote analytical pieces and features",
+    "Created human-interest stories for broadcast and digital",
+    "Published a first-person Life Story piece on MediaOne Shelf"
+   ],
+   "link": {
+    "href": "https://www.mediaoneonline.com/mediaone-shelf/life-story/dream-by-ameena-pk-214121",
+    "label": "Read the published piece (Malayalam)"
+   },
+   "m": {
+    "src": "",
+    "alt": "MediaOne newsroom"
+   }
+  },
+  {
+   "tag": "University Assistant Professor",
+   "y": "Professor",
+   "d": "Sep 2023 – Nov 2024",
+   "t": "Teaching design",
+   "r": "Assistant Professor · Majlis Arts and Science College, Malappuram",
+   "c": "#D4507A",
+   "k": [
+    "Taught Graphic Design, Animation and Web Design",
+    "Built curriculum around design thinking and real projects",
+    "Led interdisciplinary work with faculty"
+   ],
+   "m": {
+    "src": "",
+    "alt": "In the classroom"
+   }
+  },
+  {
+   "tag": "Digital Marketer",
+   "y": "Marketer",
+   "d": "Jan 2025 – Present",
+   "t": "Running brand campaigns",
+   "r": "Social Media and Digital Marketing Executive · FMCG group, Dubai",
+   "c": "#3A6BE0",
+   "k": [
+    "Manage Alif Gold, Taj FMCG, Powerboom, Fruvita, Fruzee and more",
+    "Run paid and organic campaigns on Meta and TikTok",
+    "Turn performance reports into the next round of content"
+   ],
+   "m": {
+    "src": "",
+    "alt": "Behind a campaign"
+   }
+  }
+ ],
+ "work": {
+  "title": "Selected work",
+  "intro": "AI-generated video, poster pipelines, brand content and published writing.",
+  "videosTitle": "Generated videos",
+  "videos": "Videos edited in Premiere Pro / Canva with clips and sound generated using Veo3 / Claude / ElevelLabs",
+  "postersTitle": "Hundreds of school posters",
+  "posters": "Generated and validated with AI pipelines. See samples as shown here, used OpenAI API to generate, used an upscaling model from huggingface.",
+  "brandsTitle": "Brand posts",
+  "writingTitle": "Published writing",
+  "empty": "Image coming soon"
+ },
+ "brands": {
+  "title": "Brands I handle",
+  "intro": "Instagram pages I manage, with matching Facebook and TikTok accounts and paid ads.",
+  "items": [
+   {
+    "name": "Powerboom Energy",
+    "handle": "powerboomenergy"
+   },
+   {
+    "name": "Taj FMCG / Alif Gold",
+    "handle": "tajfmcg_alifgold"
+   },
+   {
+    "name": "Buraaq Real Estate",
+    "handle": "buraaq_realestate"
+   },
+   {
+    "name": "Fruvita Beverages",
+    "handle": "fruvitabeverages"
+   },
+   {
+    "name": "Fruzee Beverages",
+    "handle": "fruzeebeverages1"
+   },
+   {
+    "name": "Alif Beverages",
+    "handle": "alifbeverages"
+   }
+  ]
+ },
+ "skills": {
+  "Paid media": [
+   "Meta Ads",
+   "TikTok Ads",
+   "Google Ads",
+   "LinkedIn Ads",
+   "Campaign reporting and analytics"
+  ],
+  "Content and social": [
+   "Social media management",
+   "Content creation and editorial writing",
+   "Video production and AI content tools",
+   "Adobe Photoshop",
+   "Adobe Illustrator",
+   "Canva"
+  ],
+  "Education and comms": [
+   "Curriculum and training content",
+   "Institutional and internal communications",
+   "Student and stakeholder engagement"
+  ]
+ },
+ "moments": {
+  "title": "Moments",
+  "intro": "Photos and clips from the journey.",
+  "items": [
+   {
+    "src": "",
+    "alt": "Campus days"
+   },
+   {
+    "src": "",
+    "alt": "On a shoot"
+   },
+   {
+    "src": "",
+    "alt": "At MediaOne"
+   },
+   {
+    "src": "",
+    "alt": "In the classroom"
+   },
+   {
+    "src": "",
+    "alt": "Behind a campaign"
+   },
+   {
+    "src": "",
+    "alt": "Dubai"
+   }
+  ]
+ },
+ "contact": {
+  "title": "Let us talk",
+  "intro": "Open to Marketing Generalist roles in Dubai and to freelance projects.",
+  "whatsappLabel": "Book a call on WhatsApp",
+  "emailLabel": "Email me",
+  "email": "me@ameenapk.art",
+  "whatsapp": "971509716093",
+  "waText": "Hi Ameena, I found your portfolio and would like to talk about a project."
+ },
+ "footer": "© 2026 Ameena PK",
+ "labels": {
+  "skills": "Skills",
+  "photoPlaceholder": "Photo or clip: "
+ }
+}
